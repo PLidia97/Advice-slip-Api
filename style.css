@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Stratos Web";
+}
+
+body {
+  background-color: #202632;
+  display: flex;
+  justify-content: center;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adviceBox {
+  background-color: #313a49;
+  width: 396px;
+  height: 361px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  padding: 40px;
+}
+.image img {
+  width: 100%;
+  height: 17px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  background-color: #53ffab;
+  border-radius: 100%;
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  bottom: -30px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  filter: drop-shadow(0 0 0.75rem hsl(150, 100%, 66%));
+  transition: all 0.2s ease-out;
+}
+
+p {
+  color: #53ffab;
+  font-size: 15px;
+  letter-spacing: 14%;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 37.8px;
+  text-align: center;
+  font-weight: 400;
+}
+
+@media (min-width: 600px) {
+  .adviceBox {
+    width: 540px;
+    height: 335px;
+  }
+}
